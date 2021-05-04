@@ -10,6 +10,13 @@ bounce = 0.1
 
 [node name="Car" type="Spatial"]
 script = ExtResource( 1 )
+sphere_offset = null
+acceleration = null
+steering = null
+turn_speed = null
+turn_stop_limit = null
+speed_input = null
+rotate_input = null
 
 [node name="Ball" type="RigidBody" parent="."]
 physics_material_override = SubResource( 1 )
@@ -17,11 +24,12 @@ gravity_scale = 10.0
 angular_damp = 5.0
 
 [node name="CollisionShape" type="CollisionShape" parent="Ball"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3217, 0 )
 shape = SubResource( 2 )
 
 [node name="car_temporary" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.321703, 0 )
 
 [node name="RayCast" type="RayCast" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.321703, 0 )
 enabled = true
