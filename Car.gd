@@ -1,11 +1,11 @@
 extends Spatial
 
 onready var ball = $Ball
-onready var car_mesh = $car_temporary
+onready var car_mesh = $CarMesh
 onready var ground_ray = $CarMesh/RayCast
-onready var right_wheel = #mesh for right wheel
-onready var left_wheel = #mesh for left wheel
-onready var body_mesh = #mesh for body
+onready var right_wheel = $CarMesh/front_right
+onready var left_wheel = $CarMesh/front_left
+onready var body_mesh = $CarMesh/body
 
 export var sphere_offset = Vector3(0, -1, 0)
 export var acceleration = 50
@@ -22,11 +22,14 @@ func _ready():
 	
 func _physics_process(_delta):
 	car_mesh.transform.origin = ball.transform.origin + sphere_offset
-	ball.add_central(-car_mesh.global_transform.basis.z * speed_input)
+	ball.add_central_force(-car_mesh.global_transform.basis.z * speed_input)
 
 func _process(delta):
 	if not ground_ray.is_colliding():
+		print("end")
 		return
+	else:
+		print("ground")
 	speed_input = 0
 	speed_input += Input.get_action_strength("accelerate")
 	speed_input -= Input.get_action_strength("brake")
@@ -49,8 +52,8 @@ func _process(delta):
 		body_mesh.rotation.z = lerp(body_mesh.rotation.z, t, 10 * delta)
 		
 	var n = ground_ray.get_collision_normal()
-	var xform = align_with_y(car_mesh.global_transform, n.normalized)
-	car_mesh.global_transform = car_mesh.global_transform.interpolate
+	var _xform = align_with_y(car_mesh.global_transform, n.normalized())
+	#car_mesh.global_transform = car_mesh.global_transform.interpolate
 
 func align_with_y(xform, new_y):
 	xform.basis.y = new_y
