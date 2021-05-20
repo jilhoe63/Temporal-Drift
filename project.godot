@@ -14,7 +14,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="3d_car_sphere"
+config/name="Temporal Drift"
 run/main_scene="res://TestScene.tscn"
 config/icon="res://icon.png"
 

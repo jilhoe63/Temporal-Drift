@@ -1,6 +1,5 @@
 extends Camera
 
-# https://github.com/jocamar/Godot-Post-Process-Outlines
 
 export var lerp_speed = 10.0
 
