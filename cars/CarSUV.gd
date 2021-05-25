@@ -4,9 +4,9 @@ onready var ball = $Ball
 onready var car_mesh = $CarMesh
 onready var ground_ray = $CarMesh/RayCast
 # mesh references
-onready var right_wheel = $CarMesh/tmpParent/le159/front_right
-onready var left_wheel = $CarMesh/tmpParent/le159/front_left
-onready var body_mesh = $CarMesh/tmpParent/le159/body
+onready var right_wheel = $CarMesh/tmpParent/auto/front_right
+onready var left_wheel = $CarMesh/tmpParent/auto/front_left
+onready var body_mesh = $CarMesh/tmpParent/auto/body
 
 
 
