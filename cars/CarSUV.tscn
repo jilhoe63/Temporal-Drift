@@ -31,11 +31,9 @@ enabled = true
 
 [node name="Smoke" parent="CarMesh" instance=ExtResource( 4 )]
 transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, -0.994055, 0, 1.97168 )
-emitting = false
 
 [node name="Smoke2" parent="CarMesh" instance=ExtResource( 4 )]
 transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, 0.947562, 0, 1.97168 )
-emitting = false
 
 [node name="tmpParent" type="Spatial" parent="CarMesh"]
 
