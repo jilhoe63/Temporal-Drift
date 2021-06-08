@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://collision_test.tscn" type="PackedScene" id=1]
+[ext_resource path="res://House2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=3]
 [ext_resource path="res://TestScene.gd" type="Script" id=4]
 [ext_resource path="res://lighting_env.tres" type="Environment" id=5]
@@ -64,6 +65,42 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.22296, -0.0116334, 0.011234
 
 [node name="collision_test3" parent="collision_test3/collision_test3/collision_test3/collision_test3/collision_test3/collision_test3/collision_test3/collision_test3" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.951502, 2.18799, 0.0112343 )
+
+[node name="House2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0.074554, 28.6439 )
+
+[node name="House2" parent="House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House2" parent="House2/House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House3" parent="House2" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0.074554, 25.467 )
+
+[node name="House2" parent="House2/House3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House2" parent="House2/House3/House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House4" parent="House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 37.6439 )
+
+[node name="House2" parent="House2/House4" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House2" parent="House2/House4/House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House3" parent="House2/House4" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0.074554, 25.467 )
+
+[node name="House2" parent="House2/House4/House3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+
+[node name="House2" parent="House2/House4/House3/House2" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
 
 [editable path="CarSUV"]
 [editable path="CarSUV/CarMesh/tmpParent/auto"]
