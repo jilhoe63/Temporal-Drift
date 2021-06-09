@@ -1,11 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://collision_test.tscn" type="PackedScene" id=1]
 [ext_resource path="res://House2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=3]
 [ext_resource path="res://TestScene.gd" type="Script" id=4]
 [ext_resource path="res://lighting_env.tres" type="Environment" id=5]
+[ext_resource path="res://House6.tscn" type="PackedScene" id=6]
+[ext_resource path="res://House7.tscn" type="PackedScene" id=7]
 [ext_resource path="res://tracks/track_k3.tscn" type="PackedScene" id=8]
+[ext_resource path="res://House1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://House3.tscn" type="PackedScene" id=10]
+[ext_resource path="res://House4.tscn" type="PackedScene" id=11]
+[ext_resource path="res://House5.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Church.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Fence.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Chair.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Canal_Bridge.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Bench.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Boat.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Canal.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Canal_Opening.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Canal_Corner.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Canal_Stairs.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Tree.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Pier.tscn" type="PackedScene" id=24]
+[ext_resource path="res://bridge_one.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Foliage3.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Lighthouse.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Fence_Corner.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Parasol.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Table.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Foliage2.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Lampost.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Foliage1.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Rocky_Ledge.tscn" type="PackedScene" id=34]
 
 [node name="TestScene" type="Spatial"]
 script = ExtResource( 4 )
@@ -69,21 +97,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.951502, 2.18799, 0.0112343 )
 [node name="House2" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0.074554, 28.6439 )
 
-[node name="House2" parent="House2" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
-
-[node name="House2" parent="House2/House2" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
-
-[node name="House3" parent="House2" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0.074554, 25.467 )
-
-[node name="House2" parent="House2/House3" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
-
-[node name="House2" parent="House2/House3/House2" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
-
 [node name="House4" parent="House2" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 37.6439 )
 
@@ -93,14 +106,89 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
 [node name="House2" parent="House2/House4/House2" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
 
-[node name="House3" parent="House2/House4" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0.074554, 25.467 )
+[node name="House1" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 6, 47.1294 )
 
-[node name="House2" parent="House2/House4/House3" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+[node name="House3" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 29 )
 
-[node name="House2" parent="House2/House4/House3/House2" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
+[node name="House4" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 101 )
+
+[node name="House5" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 91 )
+
+[node name="House6" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 78 )
+
+[node name="House7" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 68 )
+
+[node name="Bench" parent="." instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
+
+[node name="Boat" parent="." instance=ExtResource( 18 )]
+transform = Transform( 0.996195, -0.0858316, 0.0151344, 0.0871557, 0.98106, -0.172987, 0, 0.173648, 0.984808, 0, 1.6, 65 )
+
+[node name="Canal" parent="." instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 7, -19 )
+
+[node name="Canal_Bridge" parent="." instance=ExtResource( 16 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 6, -26.4 )
+
+[node name="Canal_Corner" parent="." instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7, -21 )
+
+[node name="Canal_Opening" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 7, -19 )
+
+[node name="Canal_Stairs" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20, 7, -19 )
+
+[node name="Chair" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5 )
+
+[node name="Church" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, 52 )
+
+[node name="Fence" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="Fence_Corner" parent="." instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="Foliage1" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Foliage2" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20 )
+
+[node name="Foliage3" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Lampost" parent="." instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 3 )
+
+[node name="Lighthouse" parent="." instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0, -11 )
+
+[node name="Parasol" parent="." instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+
+[node name="Pier" parent="." instance=ExtResource( 24 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 3, -20 )
+
+[node name="Rocky_Ledge" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -125, 0, 0 )
+
+[node name="Table" parent="." instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3 )
+
+[node name="Tree" parent="." instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 16 )
+
+[node name="bridge_one" parent="." instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 2, 0, 2, 0, -1, 0, -8.74228e-08, -116, 1, 61 )
 
 [editable path="CarSUV"]
 [editable path="CarSUV/CarMesh/tmpParent/auto"]
