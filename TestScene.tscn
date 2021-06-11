@@ -40,7 +40,7 @@ script = ExtResource( 4 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.709866, 0.704337, 0, -0.704337, -0.709866, 0, 83.4295, 0 )
-light_energy = 2.0
+light_energy = 0.5
 shadow_enabled = true
 shadow_color = Color( 0.6, 0.6, 0.6, 1 )
 shadow_contact = 0.34
@@ -107,7 +107,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.074554, 12.6439 )
 
 [node name="House1" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 6, 47.1294 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 47.1294 )
 
 [node name="House3" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 29 )
