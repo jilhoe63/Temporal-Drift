@@ -37,7 +37,7 @@ transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, 0.947562, 0, 1.97168 )
 [node name="tmpParent" type="Spatial" parent="CarMesh"]
 
 [node name="auto" parent="CarMesh/tmpParent" instance=ExtResource( 5 )]
-transform = Transform( -3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, 0, 0, 0 )
+transform = Transform( -3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, 0, 0.355869, 0 )
 
 [node name="SpringArm" type="SpringArm" parent="CarMesh"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0566, 2.54676 )
@@ -47,7 +47,6 @@ margin = 0.5
 transform = Transform( 1, 0, 0, 0, 0.993335, 0.115266, 0, -0.115266, 0.993335, 0, -0.0447302, 1.40363 )
 
 [node name="Ball" type="RigidBody" parent="."]
-transform = Transform( 1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 0, 0, 0 )
 physics_material_override = SubResource( 1 )
 gravity_scale = 8.0
 angular_damp = 5.0
