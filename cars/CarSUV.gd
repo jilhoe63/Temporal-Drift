@@ -16,7 +16,7 @@ var acceleration = 50
 var steering = 21
 var turn_speed = 4
 var turn_stop_limit = 2
-var body_tilt = 300
+var body_tilt = 900
 
 var speed_input = 0
 var rotate_input = 0
@@ -64,7 +64,7 @@ func _process(delta):
 		car_mesh.global_transform = car_mesh.global_transform.orthonormalized()
 		
 		# tilt body for effect
-		var t = -rotate_input * ball.linear_velocity.length() / body_tilt
+		var t = rotate_input * ball.linear_velocity.length() / body_tilt
 		body_mesh.rotation.z = lerp(body_mesh.rotation.z, t, 10 * delta)
 		
 	# align mesh with ground normal
