@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="ProceduralSky" id=2]
+
+[sub_resource type="Environment" id=1]
+background_mode = 2
+background_sky = SubResource( 2 )
+ambient_light_color = Color( 0.156863, 0.172549, 0.156863, 1 )
+ambient_light_energy = 3.0
+ambient_light_sky_contribution = 0.3
+
+[node name="A whole new world" type="Spatial"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
