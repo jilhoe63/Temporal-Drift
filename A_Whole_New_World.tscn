@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
-[sub_resource type="ProceduralSky" id=2]
+[ext_resource path="res://TrackPrototypes/Track_Two(Bahrain).tscn" type="PackedScene" id=1]
+[ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=2]
 
-[sub_resource type="Environment" id=1]
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=2]
 background_mode = 2
-background_sky = SubResource( 2 )
+background_sky = SubResource( 1 )
 ambient_light_color = Color( 0.156863, 0.172549, 0.156863, 1 )
 ambient_light_energy = 3.0
 ambient_light_sky_contribution = 0.3
@@ -12,4 +15,10 @@ ambient_light_sky_contribution = 0.3
 [node name="A whole new world" type="Spatial"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 1 )
+environment = SubResource( 2 )
+
+[node name="CarSUV" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13, 8, 244 )
+
+[node name="Track_Two(Bahrain)" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
