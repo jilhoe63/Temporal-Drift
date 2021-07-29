@@ -60,6 +60,7 @@ pointing/emulate_touch_from_mouse=true
 
 [physics]
 
+common/physics_fps=240
 3d/smooth_trimesh_collision=true
 
 [rendering]
