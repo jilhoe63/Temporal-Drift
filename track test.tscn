@@ -1,10 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TrackPrototypes/Track_five_two_prototype.tscn" type="PackedScene" id=2]
 [ext_resource path="res://grass.tscn" type="PackedScene" id=3]
 [ext_resource path="res://grandStandCovered.tscn" type="PackedScene" id=4]
+[ext_resource path="res://railDouble.tscn" type="PackedScene" id=5]
 [ext_resource path="res://overheadLights.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pitsGarageClosed.tscn" type="PackedScene" id=7]
+[ext_resource path="res://pitsOffice.tscn" type="PackedScene" id=8]
+[ext_resource path="res://pitsOfficeRoof.tscn" type="PackedScene" id=9]
+[ext_resource path="res://lightPostLarge.tscn" type="PackedScene" id=10]
+
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
 
 [node name="Spatial" type="Spatial"]
 
@@ -40,3 +51,318 @@ transform = Transform( 1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 2, 0, 4.7
 
 [node name="grandStandCovered" parent="grandStandCovered/grandStandCovered/grandStandCovered2/grandStandCovered2" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1, 0, 0 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="railDouble" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -72, 0, 77 )
+
+[node name="railDouble2" parent="railDouble" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble3" parent="." instance=ExtResource( 5 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 48, 0, 66 )
+
+[node name="railDouble2" parent="railDouble3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="railDouble2" parent="railDouble3/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.90735e-06 )
+
+[node name="pitsGarageClosed" parent="." instance=ExtResource( 7 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 24, 0, 64 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsGarageClosed2" parent="pitsGarageClosed/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2/pitsGarageClosed2" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 7.94702e-08, 0, 1, 0, -7.94702e-08, 0, 1, 1.00002, 0, 9.53674e-07 )
+
+[node name="pitsOffice" parent="." instance=ExtResource( 8 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 20.8, 3.5, 68 )
+
+[node name="pitsOffice" parent="pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOffice" parent="pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice/pitsOffice" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999999, 4.76837e-07, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="pitsOfficeRoof" parent="pitsOffice/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof/pitsOfficeRoof" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="lightPostLarge" parent="." instance=ExtResource( 10 )]
+transform = Transform( -5, 0, -4.37114e-07, -1.13133e-07, 4.82963, 1.2941, 4.2222e-07, 1.2941, -4.82963, 21.6, 8, 64.7 )
+
+[node name="lightPostLarge2" parent="lightPostLarge" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
+transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
