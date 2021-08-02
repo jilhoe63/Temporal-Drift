@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TrackPrototypes/Track_five_two_prototype.tscn" type="PackedScene" id=2]
@@ -10,6 +10,15 @@
 [ext_resource path="res://pitsOffice.tscn" type="PackedScene" id=8]
 [ext_resource path="res://pitsOfficeRoof.tscn" type="PackedScene" id=9]
 [ext_resource path="res://lightPostLarge.tscn" type="PackedScene" id=10]
+[ext_resource path="res://grandStand.tscn" type="PackedScene" id=11]
+[ext_resource path="res://grandStandRound.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Tree_twisted_one.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Tree.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Tree_three.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Tree_two.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Tree_twisted_two.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Tree_one.tscn" type="PackedScene" id=18]
+[ext_resource path="res://overhead.tscn" type="PackedScene" id=19]
 
 [sub_resource type="ProceduralSky" id=1]
 
@@ -23,7 +32,7 @@ background_sky = SubResource( 1 )
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 9, 70 )
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
-transform = Transform( 300, 0, 0, 0, 1, 0, 0, 0, 200, -41, -0.1, 221 )
+transform = Transform( 300, 0, 0, 0, 1, 0, 0, 0, 200, -41, -0.1, 222 )
 
 [node name="Track_five_two_prototype" parent="." instance=ExtResource( 2 )]
 transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0 )
@@ -366,3 +375,1071 @@ transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45
 
 [node name="lightPostLarge2" parent="lightPostLarge/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2/lightPostLarge2" instance=ExtResource( 10 )]
 transform = Transform( 0.999999, -3.57178e-08, 2.22521e-07, 3.57627e-08, 1, 7.45058e-08, -2.94047e-07, 0, 0.999999, 1, 0, 0 )
+
+[node name="grandStand" parent="." instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, -109, 0, -43.4 )
+
+[node name="grandStand" parent="grandStand" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 0.99995, 0, 3.05176e-05 )
+
+[node name="grandStand" parent="grandStand/grandStand" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 0.99995, 0, 3.05176e-05 )
+
+[node name="grandStandRound" parent="grandStand/grandStand" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 2, 0, 0 )
+
+[node name="grandStandRound2" parent="grandStand/grandStand" instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.335, 0, -0.365 )
+
+[node name="railDouble2" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -114, 0, -51.1 )
+
+[node name="railDouble2" parent="railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999996, 0, -3.8147e-06 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999996, 0, -3.8147e-06 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999996, 0, -3.8147e-06 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.999996, 0, -3.8147e-06 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble3" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.422618, 0, 0.906308, 0, 1, 0, -0.906308, 0, 0.422618, 9.7641, 0, -3.6158 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble3" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble3/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble3/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble3/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="railDouble2" parent="railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble2/railDouble3/railDouble2/railDouble2/railDouble2/railDouble2" instance=ExtResource( 5 )]
+transform = Transform( 0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -0.966661, 0, -0.166668 )
+
+[node name="Tree" parent="." instance=ExtResource( 14 )]
+
+[node name="Forest bite" parent="." instance=ExtResource( 17 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 1, 0, -85 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 24 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, 0, 16.5 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, 0, 7 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -7.5 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -37.5 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.5, 0, 3.8147e-06 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 1.99999, 0, 21.5 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -8.24197, 0, -32.1782 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( -0.965927, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965927, -12.3373, 0, 52.6524 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, 6 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( -0.500001, 0, 0.866026, 0, 1, 0, -0.866026, 0, -0.500001, 20.1627, 0, 29.1524 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 3.53107, 0, 1.68783 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 2.25001, 0, 3.23687 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( -0.500001, 0, 0.866026, 0, 1, 0, -0.866026, 0, -0.500001, 13.6723, 0, 10.3941 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 3.53107, 0, 1.68783 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 2.25001, 0, 3.23687 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98025e-08, 0, 1, 0, -2.98025e-08, 0, 1, 18.75, 0, -1.76312 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 1.13687e-13, 0, 1, 0, -1.13687e-13, 0, 1, -1, 0, -3.5 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98029e-08, 0, 1, 0, -2.98029e-08, 0, 1, -11.2499, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98029e-08, 0, 1, 0, -2.98029e-08, 0, 1, -30.7499, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( -7.35149e-08, 0, 1, 0, 1, 0, -1, 0, -7.35149e-08, 59.2498, 0, 38.7368 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98029e-08, 0, 1, 0, -2.98029e-08, 0, 1, 1.25003, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98029e-08, 0, 1, 0, -2.98029e-08, 0, 1, 1.25003, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 2.98029e-08, 0, 1, 0, -2.98029e-08, 0, 1, 1.25003, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 1.25003, 0, -11.7631 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite2" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 4.08496, 0, -21.6733 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -2.74995, 0, -4.76313 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 6.4424, 0, -0.520491 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+
+[node name="Forest bite" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite" instance=ExtResource( 17 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.44242, 0, -4.5205 )
+
+[node name="SM_Env_Tree_Twisted_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 13 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -3, 0, -2 )
+
+[node name="SM_Env_Tree_02" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
+
+[node name="SM_Env_Tree_03" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4 )
+
+[node name="SM_Env_Tree_01" parent="Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite/Forest bite/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite2/Forest bite/Forest bite/Forest bite" instance=ExtResource( 18 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 2, 0, -3 )
+visible = false
+
+[node name="overhead" parent="." instance=ExtResource( 19 )]
+transform = Transform( 2.38419e-07, 0, 10, 0, 10, 0, -10, 0, 2.38419e-07, -54, 0, -75.3 )
+
+[node name="overhead2" parent="." instance=ExtResource( 19 )]
+transform = Transform( -7.07108, 0, 7.07107, 0, 10, 0, -7.07107, 0, -7.07108, 57.3253, 0, 12.1657 )
