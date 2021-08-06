@@ -11,15 +11,15 @@ onready var body_mesh = $CarMesh/tmpParent/auto/body
 
 
 export (bool) var show_debug = false
-var sphere_offset = Vector3(0, -1.0, 0)
-var acceleration = 50
-var steering = 21
-var turn_speed = 4
-var turn_stop_limit = 2
-var body_tilt = 900
+export var sphere_offset = Vector3(0, -1.0, 0)
+export var acceleration = 60
+export var steering = 21
+export var turn_speed = 4
+export var turn_stop_limit = 2
+export var body_tilt = 900
 
-var speed_input = 0
-var rotate_input = 0
+export var speed_input = 0
+export var rotate_input = 0
 
 func _ready():
 	$Ball/DebugMesh.visible = show_debug
@@ -50,7 +50,7 @@ func _process(delta):
 
 	# smoke?
 	var d = ball.linear_velocity.normalized().dot(-car_mesh.transform.basis.z)
-	if ball.linear_velocity.length() > 5.5 and d < 0.9:
+	if ball.linear_velocity.length() > 1.5 and d < 0.9:
 		$CarMesh/Smoke.emitting = true
 		$CarMesh/Smoke2.emitting = true
 	else:
