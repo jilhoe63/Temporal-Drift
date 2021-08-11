@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://cars/CarSUV.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TrackPrototypes/Track_five_two_prototype.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://barrierRed.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/environment/WorldEnvironment.tscn" type="PackedScene" id=23]
 [ext_resource path="res://House7.tscn" type="PackedScene" id=24]
+[ext_resource path="res://SyntyAssets/SM_Env_MountainGrass_01.gltf" type="PackedScene" id=25]
 [ext_resource path="res://House6.tscn" type="PackedScene" id=26]
 [ext_resource path="res://billboard.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Church.tscn" type="PackedScene" id=28]
@@ -34,14 +35,15 @@
 [node name="Spatial" type="Spatial"]
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, -0.262593, 0.964907, 0, -0.964907, -0.262593, 0, 83.4295, 0 )
+transform = Transform( 1, 0, 0, 0, -0.177497, 0.984121, 0, -0.984121, -0.177497, 0, 83.4295, 0 )
+light_energy = 0.8
 light_indirect_energy = 1.81
 shadow_enabled = true
 shadow_contact = 0.34
 directional_shadow_mode = 0
 directional_shadow_normal_bias = 0.5
 
-[node name="WorldEnvironment2" parent="." instance=ExtResource( 23 )]
+[node name="WorldEnvironment" parent="." instance=ExtResource( 23 )]
 
 [node name="CarSUV" parent="." instance=ExtResource( 1 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 9, 70 )
@@ -2708,3 +2710,45 @@ transform = Transform( 0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939693, 6.1
 
 [node name="bannerTowerRed" parent="." instance=ExtResource( 31 )]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -118, 0, 47 )
+
+[node name="grandStand2" parent="." instance=ExtResource( 11 )]
+transform = Transform( -8.19152, 0, -5.73576, 0, 10, 0, 5.73576, 0, -8.19152, 85.2, 0, 65.7 )
+
+[node name="grandStand2" parent="grandStand2" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99, 0, 0 )
+
+[node name="grandStand3" parent="grandStand2" instance=ExtResource( 11 )]
+transform = Transform( 0.984808, 0, 0.173649, 0, 1, 0, -0.173649, 0, 0.984808, -1.82827, 0, 0.272524 )
+
+[node name="grandStand2" parent="grandStand2/grandStand3" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99, 0, 0 )
+
+[node name="grandStand3" parent="grandStand2/grandStand3" instance=ExtResource( 11 )]
+transform = Transform( 0.984808, 0, 0.173649, 0, 1, 0, -0.173649, 0, 0.984808, -1.82827, 0, 0.272524 )
+
+[node name="grandStand2" parent="grandStand2/grandStand3/grandStand3" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99, 0, 9.53674e-07 )
+
+[node name="grandStand3" parent="grandStand2/grandStand3/grandStand3" instance=ExtResource( 11 )]
+transform = Transform( 0.984808, 0, 0.173649, 0, 1, 0, -0.173649, 0, 0.984808, -1.82827, 0, 0.272524 )
+
+[node name="grandStand2" parent="grandStand2/grandStand3/grandStand3/grandStand3" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.99, 0, 9.53674e-07 )
+
+[node name="grandStandRound" parent="grandStand2/grandStand3/grandStand3/grandStand3" instance=ExtResource( 12 )]
+transform = Transform( 0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 7.10082, 0, 2.09538 )
+
+[node name="grandStandRound" parent="grandStand2/grandStand3" instance=ExtResource( 12 )]
+transform = Transform( -0.34202, 0, 0.939692, 0, 1, 0, -0.939692, 0, -0.34202, -4.02344, 0, 0.629335 )
+
+[node name="billboard3" parent="." instance=ExtResource( 27 )]
+transform = Transform( 1.2941, 0, 4.82963, 0, 5, 0, -4.82963, 0, 1.2941, 0, 0, -62.8 )
+
+[node name="billboard3" parent="billboard3" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.983511, 0, 5.47052 )
+
+[node name="billboard3" parent="billboard3/billboard3" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20554, 0, -11.0676 )
+
+[node name="SM_Env_MountainGrass_01" parent="." instance=ExtResource( 25 )]
+transform = Transform( -2.82843, 0, -2.12132, 0, 5, 0, 2.82843, 0, -2.12132, 150.2, 0, 101 )
