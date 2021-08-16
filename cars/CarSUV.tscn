@@ -5,15 +5,15 @@
 [ext_resource path="res://Smoke.tscn" type="PackedScene" id=4]
 [ext_resource path="res://auto.dae" type="PackedScene" id=5]
 
-[sub_resource type="PhysicsMaterial" id=1]
+[sub_resource type="PhysicsMaterial" id=6]
 bounce = 0.1
 absorbent = true
 
-[sub_resource type="SphereShape" id=2]
+[sub_resource type="SphereShape" id=7]
 
-[sub_resource type="SphereMesh" id=3]
+[sub_resource type="SphereMesh" id=8]
 
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=9]
 flags_unshaded = true
 flags_do_not_receive_shadows = true
 flags_disable_ambient_light = true
@@ -37,7 +37,7 @@ transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, 0.947562, 0, 1.97168 )
 [node name="tmpParent" type="Spatial" parent="CarMesh"]
 
 [node name="auto" parent="CarMesh/tmpParent" instance=ExtResource( 5 )]
-transform = Transform( -3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 0, 0.355869, 0 )
+transform = Transform( -3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 0, 0.310445, 0 )
 
 [node name="SpringArm" type="SpringArm" parent="CarMesh"]
 transform = Transform( 1, 0, 0, 0, 0.985378, 0.170381, 0, -0.170381, 0.985378, 0, 1.33929, 2.0944 )
@@ -48,15 +48,13 @@ transform = Transform( 1, 0, 0, 0, 0.993335, 0.115266, 0, -0.115266, 0.993335, 0
 
 [node name="Ball" type="RigidBody" parent="."]
 visible = false
-physics_material_override = SubResource( 1 )
+physics_material_override = SubResource( 6 )
 gravity_scale = 8.0
 angular_damp = 5.0
 
 [node name="CollisionShape" type="CollisionShape" parent="Ball"]
-shape = SubResource( 2 )
+shape = SubResource( 7 )
 
 [node name="DebugMesh" type="MeshInstance" parent="Ball"]
-mesh = SubResource( 3 )
-material/0 = SubResource( 4 )
-
-[editable path="CarMesh/tmpParent/auto"]
+mesh = SubResource( 8 )
+material/0 = SubResource( 9 )
