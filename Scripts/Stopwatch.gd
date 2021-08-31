@@ -1,3 +1,4 @@
+
 extends Node
 
 onready var game_start_time = OS.get_ticks_msec()

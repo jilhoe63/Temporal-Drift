@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/CarSUV.gd" type="Script" id=2]
+[ext_resource path="res://assets/texture_09.png" type="Texture" id=3]
+[ext_resource path="res://Models/Smoke.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cars/auto.dae" type="PackedScene" id=5]
+
+[sub_resource type="PhysicsMaterial" id=1]
+bounce = 0.1
+absorbent = true
+
+[sub_resource type="SphereShape" id=2]
+
+[sub_resource type="SphereMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_unshaded = true
+flags_do_not_receive_shadows = true
+flags_disable_ambient_light = true
+albedo_texture = ExtResource( 3 )
+
+[node name="CarSUV" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="CarMesh" type="Spatial" parent="."]
+
+[node name="RayCast" type="RayCast" parent="CarMesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+enabled = true
+
+[node name="Smoke" parent="CarMesh" instance=ExtResource( 4 )]
+transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, -0.994055, 0, 1.97168 )
+
+[node name="Smoke2" parent="CarMesh" instance=ExtResource( 4 )]
+transform = Transform( 1.9522, 0, 0, 0, 1, 0, 0, 0, 1, 0.947562, 0, 1.97168 )
+
+[node name="tmpParent" type="Spatial" parent="CarMesh"]
+
+[node name="auto" parent="CarMesh/tmpParent" instance=ExtResource( 5 )]
+transform = Transform( -3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 0, 0.310445, 0 )
+
+[node name="SpringArm" type="SpringArm" parent="CarMesh"]
+transform = Transform( 1, 0, 0, 0, 0.985378, 0.170381, 0, -0.170381, 0.985378, 0, 1.33929, 2.0944 )
+margin = 0.5
+
+[node name="Camera" type="Camera" parent="CarMesh/SpringArm"]
+transform = Transform( 1, 0, 0, 0, 0.993335, 0.115266, 0, -0.115266, 0.993335, 0, -0.0447302, 1.40363 )
+
+[node name="Ball" type="RigidBody" parent="."]
+physics_material_override = SubResource( 1 )
+gravity_scale = 8.0
+angular_damp = 5.0
+
+[node name="CollisionShape" type="CollisionShape" parent="Ball"]
+shape = SubResource( 2 )
+
+[node name="DebugMesh" type="MeshInstance" parent="Ball"]
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )

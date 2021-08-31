@@ -15,12 +15,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Temporal Drift"
-run/main_scene="res://TestScene.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Worlds/TestScene.tscn"
+config/icon="res://Models/icon.png"
 
 [autoload]
 
-DebugOverlay="*res://debug/DebugOverlay.tscn"
+DebugOverlay="*res://Models/DebugOverlay.tscn"
 Stopwatch="*res://Scripts/Stopwatch.gd"
 
 [input]
