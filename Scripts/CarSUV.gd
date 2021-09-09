@@ -45,12 +45,12 @@ func _process(delta):
 	rotate_input *= deg2rad(steering)
 	
 	# rotate wheels for effect
-	right_wheel.rotation.y = rotate_input
-	left_wheel.rotation.y = rotate_input
+	right_wheel.rotation.y = rotate_input * 0.6
+	left_wheel.rotation.y = rotate_input * 0.6
 
 	# smoke?
 	var d = ball.linear_velocity.normalized().dot(-car_mesh.transform.basis.z)
-	if ball.linear_velocity.length() > 1.5 and d < 0.9:
+	if ball.linear_velocity.length() > 1 and d < 1000:
 		$CarMesh/Smoke.emitting = true
 		$CarMesh/Smoke2.emitting = true
 	else:
