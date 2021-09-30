@@ -49,7 +49,7 @@ transform = Transform( 1, 0, 0, 0, 0.993335, 0.115266, 0, -0.115266, 0.993335, 0
 [node name="Ball" type="RigidBody" parent="." groups=[
 "PlayerCar",
 ]]
-visible = false
+mass = 0.8
 physics_material_override = SubResource( 1 )
 gravity_scale = 8.0
 angular_damp = 5.0

@@ -22,6 +22,7 @@ config/icon="res://Models/icon.png"
 
 DebugOverlay="*res://Models/DebugOverlay.tscn"
 Stopwatch="*res://Scripts/Stopwatch.gd"
+SoundPlayer="*res://Scripts/sound_player.gd"
 
 [input]
 

@@ -49,8 +49,8 @@ func _process(delta):
 	left_wheel.rotation.y = rotate_input * 0.6
 
 	# smoke?
-	var d = ball.linear_velocity.normalized().dot(-car_mesh.transform.basis.z)
-	if ball.linear_velocity.length() > 1 and d < 1000:
+	var d = ball.linear_velocity.normalized().dot(-car_mesh.transform.basis.y)
+	if ball.linear_velocity.length() > 0 and d < -10:
 		$CarMesh/Smoke.emitting = true
 		$CarMesh/Smoke2.emitting = true
 	else:
