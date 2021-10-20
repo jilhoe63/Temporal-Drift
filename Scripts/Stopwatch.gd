@@ -1,4 +1,3 @@
-
 extends Node
 
 onready var game_start_time = OS.get_ticks_msec()
@@ -11,6 +10,7 @@ func game_start():
 	timer_start = true
 
 func get_time():
+	#This turns the game ticks into msecs,secs, mins and displays it.
 	if timer_start:
 		var current_time = OS.get_ticks_msec() - game_start_time
 		var minutes = current_time/1000/60
@@ -29,16 +29,5 @@ func get_time():
 	else:
 		return stop_time
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass

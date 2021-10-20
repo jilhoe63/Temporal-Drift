@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Racing Sample TRACK.wav-76bca41f4ca1068b5e2400793a912990.sample"
+
+[deps]
+
+source_file="res://Music & SFX/Racing Sample TRACK.wav"
+dest_files=[ "res://.import/Racing Sample TRACK.wav-76bca41f4ca1068b5e2400793a912990.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

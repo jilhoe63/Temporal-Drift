@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Car Accelerating sounds effect.wav-3370d8b4265d4f615e794a9b4ff18bbf.sample"
+
+[deps]
+
+source_file="res://Music & SFX/Car Accelerating sounds effect.wav"
+dest_files=[ "res://.import/Car Accelerating sounds effect.wav-3370d8b4265d4f615e794a9b4ff18bbf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

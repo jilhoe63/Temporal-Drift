@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Panama.wav-4475a355142132843969ad606d23fe17.sample"
+
+[deps]
+
+source_file="res://Music & SFX/Panama.wav"
+dest_files=[ "res://.import/Panama.wav-4475a355142132843969ad606d23fe17.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Night Rockus.wav-a6e00b361c4fec9532f85e76aaa7f0d7.sample"
+
+[deps]
+
+source_file="res://Music & SFX/Night Rockus.wav"
+dest_files=[ "res://.import/Night Rockus.wav-a6e00b361c4fec9532f85e76aaa7f0d7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
