@@ -39,11 +39,6 @@ func _process(delta):
 		accelerating = false
 		sound.stop()
 	
-
-		
-		
-		
-	
 	#Making sure the car can't turn in the air.
 	if not ground_ray.is_colliding():
 		return
@@ -99,4 +94,3 @@ func align_with_y(xform, new_y):
 	xform.basis.x = -xform.basis.z.cross(new_y)
 	xform.basis = xform.basis.orthonormalized()
 	return xform
-		

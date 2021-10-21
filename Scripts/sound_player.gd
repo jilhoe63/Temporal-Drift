@@ -8,7 +8,7 @@ var music_tracks = {
 	}
 
 var sound_effects = {
-	"accelerate":"res://Music & SFX/Car Accelerating sounds effect.wav",
+	"accelerate":"res://Music & SFX/revised_acceleration.wav",
 
 }
 
