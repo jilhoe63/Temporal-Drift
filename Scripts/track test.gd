@@ -5,7 +5,7 @@ extends Spatial
 # var a = 2
 # var b = "text"
 func _process(delta):
-	print(Stopwatch.get_time())
+	#print(Stopwatch.get_time())
 	$CanvasLayer/Control/Label.text = Stopwatch.get_time()
 	#$CanvasLayer/Control/Label2.text = CarSUV.stats()
 

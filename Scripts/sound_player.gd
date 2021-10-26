@@ -1,5 +1,5 @@
 extends Node
-
+onready var cheat_code = []
 onready var music = AudioStreamPlayer.new()
 
 var music_tracks = {
@@ -11,6 +11,13 @@ var sound_effects = {
 	"accelerate":"res://Music & SFX/revised_acceleration.wav",
 
 }
+
+func _unhandled_key_input(event):
+	if event.pressed:
+		cheat_code.append(event.scancode)
+		print(cheat_code.slice(-8,-1))
+		if cheat_code.slice(-8,-1) == [73,76,79,86,69,89,79,85]:
+			sound_effects.accelerate = "res://Music & SFX/meme_revised.mp3"
 
 var music_db = 1
 var sound_db = 1

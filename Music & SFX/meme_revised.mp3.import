@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/meme_revised.mp3-bd1b4db916cb70b43c4036ce7366b091.mp3str"
+
+[deps]
+
+source_file="res://Music & SFX/meme_revised.mp3"
+dest_files=[ "res://.import/meme_revised.mp3-bd1b4db916cb70b43c4036ce7366b091.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
