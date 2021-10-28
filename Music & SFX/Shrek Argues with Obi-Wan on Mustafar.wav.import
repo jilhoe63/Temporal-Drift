@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Shrek Argues with Obi-Wan on Mustafar.wav-efdc14b8d7f3f0930458b72c104099ee.sample"
+
+[deps]
+
+source_file="res://Music & SFX/Shrek Argues with Obi-Wan on Mustafar.wav"
+dest_files=[ "res://.import/Shrek Argues with Obi-Wan on Mustafar.wav-efdc14b8d7f3f0930458b72c104099ee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

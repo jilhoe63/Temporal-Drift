@@ -9,7 +9,8 @@ var music_tracks = {
 
 var sound_effects = {
 	"accelerate":"res://Music & SFX/revised_acceleration.wav",
-
+	"steer_left":"res://Music & SFX/to_the_left.wav",
+	"steer_right":"res://Music & SFX/silence.wav",
 }
 
 func _unhandled_key_input(event):
@@ -18,6 +19,11 @@ func _unhandled_key_input(event):
 		print(cheat_code.slice(-8,-1))
 		if cheat_code.slice(-8,-1) == [73,76,79,86,69,89,79,85]:
 			sound_effects.accelerate = "res://Music & SFX/meme_revised.mp3"
+		if cheat_code.slice(-5,-1) == [83,72,82,69,75]:
+			sound_effects.accelerate = "res://Music & SFX/Shrek Argues with Obi-Wan on Mustafar.wav"
+		if cheat_code.slice(-2,-1) == [76,79,76]:
+			sound_effects.steer_left = "res://Music & SFX/to_the_left.wav"
+			sound_effects.steer_right = "res://Music & SFX/to_the_right.wav"
 
 var music_db = 1
 var sound_db = 1
