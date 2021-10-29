@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://wallpaper.jpg" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+antialiased = false
+font_path = "res://Fonts/batman_forever/batmfa__.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = SubResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/CenterContainer"]
+margin_left = 345.0
+margin_top = 248.0
+margin_right = 678.0
+margin_bottom = 351.0
+
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/HBoxContainer"]
+margin_left = -325.0
+margin_top = -150.0
+margin_right = 8.0
+margin_bottom = -47.0
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 2 )
+text = "Temporal
+Drift"
+align = 1
+valign = 1
+percent_visible = -0.333333

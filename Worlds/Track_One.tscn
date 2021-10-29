@@ -2785,9 +2785,9 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
 margin_left = 803.967
-margin_top = 26.9661
+margin_top = 25.9661
 margin_right = 1003.97
-margin_bottom = 62.9661
+margin_bottom = 61.9661
 custom_fonts/font = SubResource( 1 )
 text = "00:00:00"
 __meta__ = {
