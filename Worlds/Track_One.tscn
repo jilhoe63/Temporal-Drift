@@ -68,7 +68,6 @@ directional_shadow_normal_bias = 0.5
 "PlayerCar",
 ] instance=ExtResource( 31 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 9, 70 )
-speed_input = 1
 
 [node name="grass" parent="." instance=ExtResource( 8 )]
 transform = Transform( 300, 0, 0, 0, 1, 0, 0, 0, 200, -41, -0.1, 221 )
