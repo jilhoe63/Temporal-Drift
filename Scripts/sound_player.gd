@@ -2,17 +2,20 @@ extends Node
 onready var cheat_code = []
 onready var music = AudioStreamPlayer.new()
 
+#This creates dictionary for music track sounds.
 var music_tracks = {
 	"menu_theme":"res://Music & SFX/Menu .wav",
 	"main_theme":"res://Music & SFX/Hot Rod Hot.wav",
 	}
 
+#This creates a dictionary for sound effects.
 var sound_effects = {
 	"accelerate":"res://Music & SFX/revised_acceleration.wav",
 	"steer_left":"res://Music & SFX/to_the_left.wav",
 	"steer_right":"res://Music & SFX/silence.wav",
 }
 
+#This checks the inputs for cheatcodes that change the sound effects.
 func _unhandled_key_input(event):
 	if event.pressed:
 		cheat_code.append(event.scancode)
@@ -25,6 +28,7 @@ func _unhandled_key_input(event):
 			sound_effects.steer_left = "res://Music & SFX/to_the_left.wav"
 			sound_effects.steer_right = "res://Music & SFX/to_the_right.wav"
 
+#Volume
 var music_db = 1
 var sound_db = 1
 
@@ -34,6 +38,7 @@ func change_music_db(val):
 func change_sound_db(val):
 	sound_db = linear2db(val)
 	
+#This plays the music.
 func _ready():
 	music.stream = load(music_tracks["main_theme"])
 	add_child(music)
@@ -41,6 +46,7 @@ func _ready():
 	print(music.stream)
 	print("playing music")
 
+#This plays sound effects.
 func play_sound_effect(sfx):
 	var sound = AudioStreamPlayer.new()
 	sound.stream = load(sound_effects[sfx])

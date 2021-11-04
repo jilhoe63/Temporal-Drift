@@ -10,7 +10,7 @@ func game_start():
 	timer_start = true
 
 func get_time():
-	#This turns the game ticks into msecs,secs, mins and displays it.
+	#This turns the game ticks into milisecs,secs, mins and then displays it.
 	if timer_start:
 		var current_time = OS.get_ticks_msec() - game_start_time
 		var minutes = current_time/1000/60

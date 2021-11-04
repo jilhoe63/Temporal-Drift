@@ -15,8 +15,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Temporal Drift"
-run/main_scene="res://Worlds/TestScene.tscn"
-config/icon="res://Models/icon.png"
+run/main_scene="res://Worlds/Track_One.tscn"
+config/icon="res://Models/Racing_Icon.png"
 
 [autoload]
 

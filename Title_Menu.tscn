@@ -84,10 +84,10 @@ margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/CenterContainer"]
-margin_left = 50.0
-margin_top = 50.0
-margin_right = 383.0
-margin_bottom = 153.0
+margin_left = 345.0
+margin_top = 248.0
+margin_right = 678.0
+margin_bottom = 351.0
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer/HBoxContainer"]
 margin_right = 333.0
