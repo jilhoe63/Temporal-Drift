@@ -24,13 +24,10 @@ func _unhandled_key_input(event):
 			sound_effects.accelerate = "res://Music & SFX/meme_revised.mp3"
 		if cheat_code.slice(-5,-1) == [83,72,82,69,75]:
 			sound_effects.accelerate = "res://Music & SFX/Shrek Argues with Obi-Wan on Mustafar.wav"
-		if cheat_code.slice(-3,-1) == [76,79,76]:
-			sound_effects.steer_left = "res://Music & SFX/to_the_left.wav"
-			sound_effects.steer_right = "res://Music & SFX/to_the_right.wav"
 		if cheat_code.slice(-3,-1) == [80,69,84]:
-			music_tracks.main_theme = "res://Music & SFX/WonderPets.wav"
+			music.stream = load("res://Music & SFX/WonderPets.wav")
 #Volume
-var music_db = 0.001
+var music_db = 1
 var sound_db = 1
 
 func change_music_db(val):
@@ -43,7 +40,7 @@ func change_sound_db(val):
 func _ready():
 	music.stream = load(music_tracks["main_theme"])
 	add_child(music)
-	#music.play()
+	music.play()
 	print(music.stream)
 	print("playing music")
 
@@ -52,7 +49,7 @@ func play_sound_effect(sfx):
 	var sound = AudioStreamPlayer.new()
 	sound.stream = load(sound_effects[sfx])
 	add_child(sound)
-	#sound.play()
+	sound.play()
 	return sound
 	#yield(sound,"finished")
 	#sound.queue_free()
