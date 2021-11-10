@@ -35,6 +35,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("accelerate") and accelerating == false:
 		accelerating = true
 		sound = SoundPlayer.play_sound_effect("accelerate")
+		
 	elif Input.is_action_just_released("accelerate") and accelerating == true:
 		accelerating = false
 		sound.stop()

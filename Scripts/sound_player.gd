@@ -10,9 +10,10 @@ var music_tracks = {
 
 #This creates a dictionary for sound effects.
 var sound_effects = {
-	"accelerate":"res://Music & SFX/revised_acceleration.wav",
+	"accelerate":"res://Music & SFX/Accelerate_revised_2.wav",
 	"steer_left":"res://Music & SFX/to_the_left.wav",
 	"steer_right":"res://Music & SFX/silence.wav",
+	"lift_off":"res://Music & SFX/lift_off.wav",
 }
 
 #This checks the inputs for cheatcodes that change the sound effects.

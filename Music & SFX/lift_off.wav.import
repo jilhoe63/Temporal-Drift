@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lift_off.wav-7ebe2531fd94b17f3ed98919c5fd676c.sample"
+
+[deps]
+
+source_file="res://Music & SFX/lift_off.wav"
+dest_files=[ "res://.import/lift_off.wav-7ebe2531fd94b17f3ed98919c5fd676c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
