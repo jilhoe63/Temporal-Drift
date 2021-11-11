@@ -46,9 +46,7 @@ margin = 0.5
 [node name="Camera" type="Camera" parent="CarMesh/SpringArm"]
 transform = Transform( 1, 0, 0, 0, 0.993335, 0.115266, 0, -0.115266, 0.993335, 0, -0.0447302, 1.40363 )
 
-[node name="Ball" type="RigidBody" parent="." groups=[
-"PlayerCar",
-]]
+[node name="Ball" type="RigidBody" parent="." groups=["PlayerCar"]]
 physics_material_override = SubResource( 1 )
 gravity_scale = 8.0
 angular_damp = 5.0

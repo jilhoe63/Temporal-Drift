@@ -27,7 +27,7 @@ func _ready():
 	$Ball/DebugMesh.visible = show_debug
 	ground_ray.add_exception(ball)
 	DebugOverlay.stats.add_property(ball, "linear_velocity", "length")
-	DebugOverlay.draw.add_vector(ball, "linear_velocity", 1, 4, Color(0, 1, 0, 0.5))
+	#DebugOverlay.draw.add_vector(ball, "linear_velocity", 1, 4, Color(0, 1, 0, 0.5))
 	#DebugOverlay.draw.add_vector(car_mesh, "transform:basis:z", -4, 4, Color(1, 5, 0, 0.5))
 
 func _process(delta):

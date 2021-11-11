@@ -40,7 +40,9 @@ func change_sound_db(val):
 #This plays the music.
 func _ready():
 	music.stream = load(music_tracks["main_theme"])
+	change_music_db(.6)
 	add_child(music)
+	music.volume_db = music_db
 	music.play()
 	print(music.stream)
 	print("playing music")
